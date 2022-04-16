@@ -24,29 +24,32 @@ class PengaturanBahasa extends StatelessWidget {
               style: TextStyle(color: Colors.white),
             ),
           )),
-      body: Column(
-        children: [
-          Container(
-            height: 100,
-            width: 600,
-            //color: Colors.black,
-            padding: EdgeInsets.all(15.0),
-            child: Text(
-              "Indonesia",
-              style: TextStyle(fontSize: 35),
+      body: Container(
+        color: Colors.white,
+        child: Column(
+          children: [
+            Container(
+              height: 100,
+              width: 600,
+              //color: Colors.black,
+              padding: EdgeInsets.all(15.0),
+              child: Text(
+                "Indonesia",
+                style: TextStyle(fontSize: 35),
+              ),
             ),
-          ),
-          Container(
-            height: 100,
-            width: 600,
-            //color: Colors.black,
-            padding: EdgeInsets.all(15.0),
-            child: Text(
-              "English",
-              style: TextStyle(fontSize: 35),
+            Container(
+              height: 100,
+              width: 600,
+              //color: Colors.black,
+              padding: EdgeInsets.all(15.0),
+              child: Text(
+                "English",
+                style: TextStyle(fontSize: 35),
+              ),
             ),
-          ),
-        ],
+          ],
+        ),
       ),
     );
   }

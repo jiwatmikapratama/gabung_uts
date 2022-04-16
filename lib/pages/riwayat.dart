@@ -10,6 +10,7 @@ class Riwayat extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         body: Container(
+          color: Colors.white,
       width: double.infinity,
       height: double.infinity,
       child: Column(

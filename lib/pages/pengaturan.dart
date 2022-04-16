@@ -27,7 +27,9 @@ class Pengaturan extends StatelessWidget {
               style: TextStyle(color: Colors.white),
             ),
           )),
-      body: Column(
+      body: Container(
+        color: Colors.white,
+        child: Column(
         children: [
           InkWell(
             onTap: () {
@@ -39,7 +41,7 @@ class Pengaturan extends StatelessWidget {
             child: Container(
               height: 100,
               width: 600,
-              //color: Colors.black,
+              
               padding: EdgeInsets.all(15.0),
               child: Text(
                 "Pilih Bahasa",
@@ -49,6 +51,8 @@ class Pengaturan extends StatelessWidget {
           )
         ],
       ),
+      ),
+      
     );
   }
 }
