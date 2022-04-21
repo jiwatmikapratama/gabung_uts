@@ -10,16 +10,18 @@ class Daftar extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-        child: Column(
+        child: ListView(
           children: [
-            Container(
-              margin: EdgeInsets.fromLTRB(0, 50, 0, 50),
-              child: Text(
-                'REGISTER',
-                style: TextStyle(
-                    fontWeight: FontWeight.bold,
-                    fontSize: 30,
-                    color: Colors.white),
+            Center(
+              child: Container(
+                margin: EdgeInsets.fromLTRB(0, 50, 0, 50),
+                child: Text(
+                  'REGISTER',
+                  style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 30,
+                      color: Colors.white),
+                ),
               ),
             ),
             Container(

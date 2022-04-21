@@ -12,21 +12,13 @@ class Pengaturan extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
           backgroundColor: Color(0xFF05445E),
-          actions: [
-            IconButton(
-              icon: Icon(Icons.arrow_back, color: Colors.white),
-              onPressed: () {
-                Navigator.pop(context);
-              },
-            ),
-          ],
-          // leading: IconButton(icon: Icon(Icons.arrow_back),
           title: Center(
             child: Text(
               "Pengaturan",
               style: TextStyle(color: Colors.white),
             ),
-          )),
+          )
+        ),
       body: Container(
         color: Colors.white,
         child: Column(

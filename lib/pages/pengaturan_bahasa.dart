@@ -10,14 +10,6 @@ class PengaturanBahasa extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
           backgroundColor: Color(0XFF05445E),
-          actions: [
-            IconButton(
-              icon: Icon(Icons.arrow_back, color: Colors.white),
-              onPressed: () {
-                Navigator.pop(context);
-              },
-            )
-          ],
           title: Center(
             child: Text(
               "Bahasa",
