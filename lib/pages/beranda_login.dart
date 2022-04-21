@@ -1,7 +1,5 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
-import 'dart:html';
-
 import 'package:flutter/material.dart';
 import 'package:gabung_uts/main.dart';
 import 'package:gabung_uts/pages/daftar_pengelola.dart';
@@ -42,11 +40,19 @@ class _Beranda_loginState extends State<Beranda_login> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        iconTheme: IconThemeData(color: Colors.black),
         backgroundColor: Color(0xFF189AB4),
-        title: Text('Search'),
+        title: Text(
+          'Search',
+          style: TextStyle(
+            color: Colors.black,
+          ),
+        ),
         actions: [
           IconButton(
-            icon: Icon(Icons.search),
+            icon: Icon(
+              Icons.search,
+            ),
             onPressed: () {
               showSearch(context: context, delegate: DataSearch());
             },
@@ -222,17 +228,19 @@ class DataSearch extends SearchDelegate<String> {
 
     return ListView.builder(
       itemBuilder: (context, index) => ListTile(
-          onTap: () {
-            showResults(context);
-          },
-          leading: Icon(Icons.location_city),
-          title: RichText(
-              text: TextSpan(
-            text: suggestionList[index].substring(0, query.length),
-            style: TextStyle(
-              color: Colors.grey,
-            ),
-          ))),
+        onTap: () {
+          showResults(context);
+        },
+        leading: CircleAvatar(
+          backgroundImage: AssetImage('images/catur.jpg'),
+        ),
+        title: Column(
+          children: [
+            Text(suggestionList[index]),
+            Text("Alamat"),
+          ],
+        ),
+      ),
       itemCount: suggestionList.length,
     );
   }
